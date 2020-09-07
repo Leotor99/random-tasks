@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sortea2</title>
+    <link rel="stylesheet" href="bootstrap3.min.css" />
+    <link rel="stylesheet" href="font-awesome.css" />
+    <link rel="stylesheet" href="bootstrap-glyphicons.css" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- <div> <i class="fa fa-arrow-right"></i> </div> -->
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div style="text-align: center;">
+            <div class="row">
+              <div class="col-12">
+                <h1>SORTEA2</h1>
+                <h2>
+                  <div id="titulo">
+                    <a href="" id="btn-tareas" class="btn btn-danger"
+                      >Tareas Aleatorias</a
+                    >
+                    <a href="" id="btn-premio" class="btn btn-warning"
+                      >Con premio</a
+                    >
+                    
+                  </div>
+                </h2>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <div id="contenido-tareas">
+                    <div class="row">
+                        <div class="col-md-6">
+                          <div class="card">
+                            <div class="card-header" style="background-color:lightseagreen;">
+                              <h5>Participantes</h5>
+                            </div>
+                            <div class="card-body" style="padding: 0px;">
+                              <textarea class="form-control" id="participantes" rows="10" ></textarea>
+                            </div>
+                          </div>
+                            
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card">
+                              <div class="card-header" style="background-color:lightseagreen;">
+                                <h5>Temas</h5>
+                              </div>
+
+                              <div class="card-body" style="padding: 0px;">
+                                <textarea class="form-control" id="temas" rows="10"></textarea>
+                              </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="col-md-12 mt-3">
+                            <button class="btn btn-block btn-warning" id="g_tareas">
+                                Generar!
+                            </button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div id="contenido-premio">
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="card">
+                        <div class="card-header" style="background-color:lightseagreen;">
+                          <h5>Participantes</h5>
+                        </div>
+                        <div class="card-body" style="padding: 0px;">
+                          <textarea class="form-control" id="participantes2" rows="10" ></textarea>
+                        </div>
+                      </div>
+                        
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card">
+                          <div class="card-header" style="background-color:lightseagreen;">
+                            <h5>Premio(s)</h5>
+                          </div>
+
+                          <div class="card-body" style="padding: 0px;">
+                            <textarea class="form-control" id="premios" rows="10"></textarea>
+                          </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="col-md-12 mt-3">
+                        <button class="btn btn-block btn-warning" id="g_premios">
+                            Generar!
+                        </button>
+                    </div>
+                    
+                </div>
+                </div>
+                <div id="contenido-castigo"></div>
+              </div>
+
+              <div class="col-md-6">
+                
+                  <div class="card" id="sorteo">
+                    <div class="card-header bg-success" id="titulo_resultado"></div>
+                    <div class="card-body">
+                      <table class="table table-responsive-md">
+                      <tbody id="resultado" ></tbody>
+                      </table>
+
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" id="errormodal" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#pruebamoda2">
+      prueba modal2
+    </button>
+
+    <div class="modal fade" id="pruebamoda2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-danger">
+              <h4 class="modal-title" id="myModalLabel">Errores</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            
+          </div>
+          <div class="modal-body" id="contenido-errores">
+           
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn " style="background-color: #0069d9;" data-dismiss="modal">Close</button>
+            
+          </div>
+        
+      </div>
+    </div>
+    </div>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script src="./index2.js"></script>
+  </body>
+</html>
